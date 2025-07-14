@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylvaris Rimefroide - Fiche de Personnage</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            color: #8b4513;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-left: 5px solid #3498db;
+            border-radius: 8px;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            font-size: 1.8em;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section h2::before {
+            content: "⚔️";
+            margin-right: 10px;
+            font-size: 0.8em;
+        }
+        
+        .origins h2::before { content: "🏰"; }
+        .bard h2::before { content: "🎭"; }
+        .incident h2::before { content: "⚡"; }
+        .new-life h2::before { content: "🌊"; }
+        .insults h2::before { content: "💬"; }
+        
+        .character-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .info-box {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #3498db;
+        }
+        
+        .info-box h3 {
+            margin-top: 0;
+            color: #2980b9;
+            font-size: 1.1em;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 15px 0;
+        }
+        
+        .insult-list {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #e74c3c;
+        }
+        
+        .insult-list ol {
+            columns: 2;
+            column-gap: 30px;
+        }
+        
+        .insult-list li {
+            margin-bottom: 8px;
+            break-inside: avoid;
+            font-style: italic;
+            color: #c0392b;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #3498db;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -22px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: #3498db;
+            border-radius: 50%;
+        }
+        
+        .timeline-item h4 {
+            margin: 0 0 10px 0;
+            color: #2980b9;
+            font-size: 1.2em;
+        }
+        
+        .reference {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            .character-info {
+                grid-template-columns: 1fr;
+            }
+            
+            .insult-list ol {
+                columns: 1;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sylvaris Rimefroide</h1>
+        <p class="subtitle">Un Héritier de Légende... en cavale</p>
+        
+        <div class="character-info">
+            <div class="info-box">
+                <h3>Informations Générales</h3>
+                <p><strong>Race :</strong> Sangdragon</p>
+                <p><strong>Classe :</strong> Barde</p>
+                <p><strong>Origine :</strong> Djerad Thymar, Tymanther</p>
+                <p><strong>Âge de départ :</strong> 17 ans</p>
+            </div>
+            
+            <div class="info-box">
+                <h3>Héritage Familial</h3>
+                <p><strong>Grand-père :</strong> Zorvakar des Cendres Gelées</p>
+                <p><strong>Titre :</strong> Vanquisher (commandant d'élite)</p>
+                <p><strong>Exploit :</strong> Vainqueur du dragon rouge Enonya</p>
+                <p><strong>Relique :</strong> Écaille argentée (porte-bonheur)</p>
+            </div>
+        </div>
+        
+        <div class="section origins">
+            <h2>Origines : Djerad Thymar et l'Héritage des Vanquishers</h2>
+            <p>Sylvaris est né et a grandi à <strong>Djerad Thymar</strong>, la grande forteresse et capitale de Tymanther, où les sangdragons forment une société fière et résiliente. Son grand-père, un <strong>Vanquisher respecté</strong> (commandant d'élite de l'armée tymanthienne), est une légende locale.</p>
+            
+            <div class="highlight">
+                <strong>Zorvakar des Cendres Gelées - fléau d'Enonya</strong> a combattu aux côtés des plus grands champions de Bahamut contre des menaces telles que des dragons chromatiques ou des forces de Mulhorande. Il a vaincu seul le dragon rouge Enonya.
+            </div>
+            
+            <p>Sylvaris admire profondément son aïeul, non seulement pour ses exploits, mais aussi pour son sens de l'honneur et de la justice. L'écaille argentée qu'il conserve précieusement est à la fois un porte-bonheur et un symbole de l'héritage qu'il tente de se montrer digne.</p>
+        </div>
+        
+        <div class="section bard">
+            <h2>La Naissance d'un Barde</h2>
+            <p>Son destin a changé lorsqu'il a vu, enfant, une troupe de bardes <strong>Chessentiens</strong> en spectacle. Chessenta, voisine de Tymanther, est une terre de culture et d'art, où la musique et le théâtre sont omniprésents.</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Révélation artistique</h4>
+                    <p>Ce spectacle, empli de contes épiques et de chants exaltants, lui a fait comprendre que les mots et la musique pouvaient être aussi puissants que l'acier.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>Départ à 17 ans</h4>
+                    <p>Il a quitté Djerad Thymar pour parcourir le Chessenta, apprenant auprès des bardes locaux et perfectionnant son art.</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h4>Formation artistique</h4>
+                    <p>Il a notamment voyagé à <strong>Soorenar</strong>, <strong>Cimbar</strong> et <strong>Airspur</strong>, où il a appris les subtilités des performances théâtrales, du chant et du jeu instrumental (lyre et tambour).</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section incident">
+            <h2>L'Incident de Luthcheq : Quand le Talent Devient une Malédiction</h2>
+            <p>Chessenta est un lieu de liberté artistique, mais <strong>Luthcheq</strong> fait figure d'exception. Dirigée par la famille <strong>Karanok</strong>, cette cité est fanatiquement anti-magie, et les utilisateurs de magie y sont pourchassés ou marqués d'un tatouage inhibiteur.</p>
+            
+            <div class="highlight">
+                <strong>L'erreur fatale :</strong>
+                <ul>
+                    <li>Lors d'un spectacle, il s'est moqué d'un noble influent</li>
+                    <li>Il a agrémenté ses piques de lumières dansantes pour mieux illustrer ses railleries</li>
+                    <li>Le noble, furieux d'être ridiculisé en public, a immédiatement cherché à le faire arrêter pour qu'il soit marqué d'un tatouage anti-magie</li>
+                    <li>Sylvaris a pris la fuite, profitant de la confusion et de sa connaissance du terrain</li>
+                </ul>
+            </div>
+            
+            <p>Depuis cet incident, il évite le Chessenta et se cache en direction de l'Ouest, cherchant refuge dans l'anonymat des grandes cités de la Côte des Épées.</p>
+        </div>
+        
+        <div class="section new-life">
+            <h2>Une Nouvelle Vie sur la Côte des Épées</h2>
+            <p>Avec ses compétences en histoire, musique et contes, il survit en se produisant dans les tavernes ou en trouvant des mécènes. Toutefois, il sait que le noble de Luthcheq a les moyens d'envoyer des chasseurs de primes sur ses traces...</p>
+            
+            <div class="highlight">
+                <strong>Situation actuelle :</strong> La solitude lui pesant un peu après tant d'années à enchaîner les rencontres temporaires, Sylvaris est en quête d'un groupe de compagnons auxquels se joindre avant d'écrire sa propre histoire et pas seulement celles des autres.
+            </div>
+        </div>
+        
+        <div class="section insults">
+            <h2>Répertoire d'Insultes Créatives</h2>
+            <p>En tant que barde expérimenté, Sylvaris a développé un arsenal d'insultes particulièrement créatives :</p>
+            
+            <div class="insult-list">
+                <ol>
+                    <li>T'es pas le sapin le plus vert de la forêt</li>
+                    <li>Y te reste deux neurones et ils se battent pour la troisième place</li>
+                    <li>T'es du genre à verser la bière avant de poser la chope</li>
+                    <li>T'as une tête à connaître le goût des pissotières</li>
+                    <li>La sagesse te court après mais t'as toujours été plus rapide</li>
+                    <li>Ton arbre généalogique c'est un cercle</li>
+                    <li>Si ton cerveau était un baluchon, on pourrait dire que tu voyages léger</li>
+                    <li>Il est gentil mais j'en ferai pas un élevage</li>
+                    <li>Tu comprends vite mais faut t'expliquer longtemps</li>
+                    <li>Il respire l'intelligence, dommage qu'il ait le nez bouché</li>
+                    <li>T'es le genre de personne qui met un coquillage sur son oreille et c'est le coquillage qui entend la mer</li>
+                    <li>T'es pas la corde la plus accordée d'un luth</li>
+                    <li>Tu es comme le X dans Chult: inexistant</li>
+                    <li>L'Homme descend du singe mais toi t'as dû louper des branches</li>
+                    <li>Je suis pas vétérinaire, mais je sais reconnaître un blaireau</li>
+                    <li>Si la bêtise payait, tu serais sans doute le plus riche du coin</li>
+                </ol>
+            </div>
+            
+            <div class="reference">
+                Source d'inspiration : <a href="https://www.facebook.com/share/1653p55WUT/?mibextid=wwXIfr" target="_blank">Lien Facebook</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
